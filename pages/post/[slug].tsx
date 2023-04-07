@@ -47,6 +47,7 @@ const Post = ({post}:Props) => {
             setUserErr("")
         }
     }
+    console.log(post.comments)
   return (
     <div>
         <Header/>
@@ -170,16 +171,7 @@ const Post = ({post}:Props) => {
             Comment is required</p>
         )}
     </label>
-   {!session && (
-         <button 
-         onClick={handleUserErr}
-         className='w-full bg-bgColor text-white text-base font-titleFont 
-         font-semibold tracking-wider uppercase py-2 rounded-sm 
-         hover:bg-secondaryColor duration-300'
-         type='submit'>
-            Submit
-        </button>
-   )}
+   
    {
     userErr && (
         <p className='text-sm font-titleFont text-center font-semibold text-red-500 
@@ -189,22 +181,36 @@ const Post = ({post}:Props) => {
             {userErr}</p>
     )
    }
-    <button 
-         className='w-full bg-bgColor text-white text-base font-titleFont 
-         font-semibold tracking-wider uppercase py-2 rounded-sm 
-         hover:bg-secondaryColor duration-300'
-         type='submit'>
-            Submit
-        </button>
+   {session && (
+             <button 
+             className='w-full bg-bgColor text-white text-base font-titleFont 
+             font-semibold tracking-wider uppercase py-2 rounded-sm 
+             hover:bg-secondaryColor duration-300'
+             type='submit'>
+                Submit
+            </button>
+   )}
 </form>
+    {!session && (
+            <button 
+            onClick={handleUserErr}
+            className='w-full bg-bgColor text-white text-base font-titleFont 
+            font-semibold tracking-wider uppercase py-2 rounded-sm 
+            hover:bg-secondaryColor duration-300'
+            type='submit'>
+                Submit
+            </button>
+    )}
 {/* Comments */}
 <div className='w-full flex flex-col p-10 my-10 mx-auto shadow-bgColor shadow-lg space-y-2'>
     <h3 className='text-3xl font-titleFont font-semibold'>Comments</h3>
     <hr/>
+    <p>hi </p>
     {post.comments.map((comment) => (
         <div key={comment._id}>
             <p>
-                <span className='text-secondaryColor'>{comment.name}</span>{" "}{comment.comment}</p>
+                <span className='text-secondaryColor'>{comment.name} tim</span>{" "}{comment.comment}
+            </p>
         </div>
     ))}
 </div>
@@ -242,7 +248,7 @@ export const getStaticProps: GetStaticProps = async({ params }) => {
             name,
             image
           },
-          "comments":*[_type == "comment" && post.ref == ^._id && approved == true],
+          "comments":*[_type == "comment" && post.ref == _id && approved == true],
           description,
           mainImage,
           slug,

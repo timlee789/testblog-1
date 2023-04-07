@@ -31,6 +31,12 @@ export default defineType({
       type: 'reference',
       to: {type: 'author'},
     }),
+    // defineField({
+    //   name: 'comment',
+    //   title: 'Comment',
+    //   type: 'reference',
+    //   to: {type: 'comment'},
+    // }),
     defineField({
       name: 'mainImage',
       title: 'Main image',

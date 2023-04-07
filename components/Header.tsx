@@ -10,28 +10,30 @@ const Header = () => {
     <div className="w-full h-20 border-b-[1px] border-b-black font-titleFont sticky top-0 bg-white z-50 px-4">
       <div className="max-w-7xl h-full mx-auto flex justify-between items-center">
         <Link href="/">
-          <div>
-            <Image width={80} height={80} src={logoDark} alt="logoDark" />
+          <div className="text-lg font-bold">
+            LocalFlyer.online
+            {/* <Image width={80} height={80} src={logoDark} alt="logoDark" /> */}
           </div>
         </Link>
         <div>
           <ul className="hidden lg:inline-flex gap-8 uppercase text-sm font-semibold">
             <li className="headerLi">Home</li>
-            <li className="headerLi">Posts</li>
-            <li className="headerLi">Pages</li>
-            <li className="headerLi">Features</li>
+            <li className="headerLi">Beauty News</li>
+            <li className="headerLi">Landing Page</li>
+            <li className="headerLi">Contents Gallery</li>
             <li className="headerLi">Contact</li>
           </ul>
         </div>
+       
         <div className="flex items-center gap-8 text-lg">
           <div className="flex items-center gap-1">
-            <img
+            {/* <img
               className="w-8 h-8 rounded-full"
               src="https://www.noormohammad.live/static/media/roundedProfile.477a194221d255c8ce26.png"
               alt="logo"
-            />
+            /> */}
             <p className="text-sm font-medium">
-              {session ? session?.user!.name : "Hello Stranger!"} 
+             Welcome {session ? session?.user!.name : ""} 
             </p>
           </div>
         {
