@@ -27,11 +27,11 @@ export default function Home({posts}:Props) {
         <Header />
         {/* ============ Header End here ============== */}
         {/* ============ Banner Start here ============ */}
-        {/* <Banner /> */}
+        <Banner />
         {/* ============ Banner End here ============== */}
-        {/* <div className="max-w-7xl mx-auto h-60 relative">
+        <div className="max-w-7xl mx-auto h-60 relative">
           <BannerBottom />
-        </div> */}
+        </div>
         {/* ============ Banner-Bottom End here ======= */}
         {/* ============ Post Part Start here ========= */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 py-6 px-4">
