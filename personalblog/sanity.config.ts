@@ -6,9 +6,13 @@ import {schemaTypes} from './schemas'
 export default defineConfig({
   name: 'default',
   title: 'personalblog',
-
+  basePath: '/studio',
+  
   projectId: 'hc75lp8d',
   dataset: 'production',
+
+  
+	
 
   plugins: [deskTool(), visionTool()],
 
