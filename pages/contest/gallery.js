@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useReducer } from 'react';
 
-import Layout from '../../components/layout';
+import Layout from '../../components/flyer/layout';
 import getError from '../../utils/error';
 import Image from 'next/image';
 

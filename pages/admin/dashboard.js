@@ -11,7 +11,7 @@ import {
   Legend,
 } from 'chart.js';
 import React, { useEffect, useReducer } from 'react';
-import Layout from '../../components/layout';
+import Layout from '../../components/flyer/layout';
 import getError from '../../utils/error';
 
 ChartJS.register(

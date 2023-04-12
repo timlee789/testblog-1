@@ -1,11 +1,11 @@
 import db from '../utils/db';
-import StoreInfo from '../components/storeinfo';
-import Layout from '../components/layout';
+import StoreInfo from '../components/flyer/storeinfo';
+import Layout from '../components/flyer/layout';
 import Users from '../models/Users';
 //import Image from 'next/image';
-import LoginScreen from '@/components/login';
+import LoginScreen from '../components/flyer/login';
 import { useSession } from 'next-auth/react';
-import Productpage from '@/components/productpage';
+import Productpage from '../components/flyer/productpage';
 
 
 export default function Home({storeinfo}) {

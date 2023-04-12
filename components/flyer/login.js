@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { signIn, useSession } from 'next-auth/react';
 import { toast } from 'react-toastify';
-import  getError  from '../utils/error';
+import  getError  from '../../utils/error';
 import { useForm } from 'react-hook-form';
 import { useRouter } from 'next/router';
-import Layout from '../components/layout';
+
 
 function LoginScreen() {
   const {

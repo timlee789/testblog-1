@@ -2,7 +2,7 @@ import axios from 'axios';
 import Link from 'next/link';
 import React, { useEffect, useReducer } from 'react';
 import { toast } from 'react-toastify';
-import Layout from '../../../components/layout';
+import Layout from '../../../components/flyer/layout';
 import getError from '../../../utils/error';
 
 function reducer(state, action) {
