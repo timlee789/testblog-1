@@ -36,7 +36,7 @@ const Header = () => {
   return (
     <div className="w-full h-20 border-b-[1px] border-b-black font-titleFont sticky top-0 bg-white z-50 px-4 pt-4">
        <ToastContainer position="bottom-center" limit={1} autoClose={2000} />
-       <header>
+       
       <div className="max-w-7xl h-full mx-auto flex justify-between items-center">      
         {session?.user?.isAdmin? ( 
               <Link href="/">
@@ -195,7 +195,7 @@ const Header = () => {
          
         </div>
       </div>
-      </header>
+     
       
      
     </div>
