@@ -24,7 +24,7 @@ export default function Home({posts}:Props) {
 
       <main className="font-bodyFont">
         {/* ============ Header Start here ============ */}
-        <Header />
+       
         {/* ============ Header End here ============== */}
         {/* ============ Banner Start here ============ */}
         <Banner />
