@@ -1,6 +1,6 @@
 import  {useState} from 'react'
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
+import Header from '../../components/blog/Header';
+import Footer from '../../components/blog/Footer';
 import { sanityClient, urlFor } from '../../sanity';
 import { GetStaticProps } from 'next';
 import { Post, Comment } from "../../typings";
