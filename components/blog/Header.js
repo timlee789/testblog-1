@@ -12,7 +12,7 @@ import Menubar from '../munubar'
 import Footer from "./Footer";
 
 
-const Header = ({children}) => {
+const Header = () => {
 
   const { status, data: session } = useSession();
   const { state, dispatch } = useContext(Store);
@@ -196,7 +196,7 @@ const Header = ({children}) => {
         </div>
       </div>
       </header>
-      <main className="container m-auto mt-4 px-4">{children}</main>
+      
      
     </div>
   );
