@@ -123,6 +123,25 @@ textarea {
   flex-wrap: true;
 }
 
+
+.category-btn{
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor:pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  padding: 7px 15px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+
 @keyframes pulse {
   0%,
   100% {

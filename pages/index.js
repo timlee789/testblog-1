@@ -13,6 +13,8 @@ import Banner from "../components/blog/Banner";
 import BannerBottom from "../components/blog/BannerBottom";
 import Header from "../components/blog/Header";
 import Footer from "../components/blog/Footer";
+import Feed from '../components/youtube/Feed';
+
 
 
 export default function Home({storeinfo, posts}) {
@@ -46,7 +48,7 @@ export default function Home({storeinfo, posts}) {
           <BannerBottom />
         </div>
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6 py-6 px-4">
-          {posts.map((post) =>(
+          {posts.slice(0, 3).map((post) =>(
             <Link key={post._id} href={`/post/${post.slug.current}`}>
               <div className="border-[1px] border-secondaryColor border-opacity-40 h-[450px] group m-2">
                 <div className="h-3/5 w-full overflow-hidden">
@@ -72,9 +74,13 @@ export default function Home({storeinfo, posts}) {
             </Link>
           ))}     
         </div>
+        
+        <div className="max-w-7xl mx-auto py-6 px-4">
+         <Feed />
+       </div> 
 
         <div className="max-w-7xl mx-auto grid grid-cols-2 gap-4 mt-10 md:grid-cols-3 lg:grid-cols-4  ">
-        {storeinfo.map((sto) => (
+        {storeinfo.slice(0, 8).map((sto) => (
           <StoreInfo
             key={sto._id}
             id={sto._id}
@@ -87,8 +93,10 @@ export default function Home({storeinfo, posts}) {
             tel={sto.tel}
           />
         ))}
-      </div>    
-       </div> 
+      </div>   
+      
+    </div> 
+   
        </main>
       ) }   
      <Footer />

@@ -6,7 +6,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.0",
+    "@emotion/styled": "^11.10.0",
     "@headlessui/react": "^1.7.13",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.9.3",
     "@next/font": "13.1.6",
     "@paypal/react-paypal-js": "^7.8.2",
     "@portabletext/react": "^2.0.2",
@@ -34,6 +38,7 @@
     "react-player": "^2.11.2",
     "react-portable-text": "^0.6.0",
     "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.10.0",
     "react-slick": "^0.29.0",
     "react-toastify": "^9.1.1",
     "slick-carousel": "^1.8.1"
